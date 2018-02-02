@@ -110,7 +110,7 @@ public class VLayoutActivity extends Activity {
         setContentView(R.layout.main_activity);
 
         mSwipeRefreshLayout = (SwipeRefreshLayout)findViewById(R.id.swipe_container);
-;
+
         mFirstText = (TextView) findViewById(R.id.first);
         mLastText = (TextView) findViewById(R.id.last);
         mCountText = (TextView) findViewById(R.id.count);
@@ -233,6 +233,7 @@ public class VLayoutActivity extends Activity {
             layoutHelper2.setMargin(10, 0, 10, 10);
             layoutHelper2.setPadding(10, 0, 10, 10);
             layoutHelper2.setBgColor(0xFFF5A623);
+
             final Handler mainHandler = new Handler(Looper.getMainLooper());
             adapters.add(new SubAdapter(this, layoutHelper1, 1) {
                 @Override
